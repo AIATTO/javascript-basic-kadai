@@ -1,5 +1,6 @@
-const sayGoodMorning = () => {
-  console.log(new Date.prototype.getFullYear().toString());
-  console.log(new Date.prototype.getDay().toString());
-  console.log(new Date.prototype.getDate().toString());
-};
+const today = new Date();
+{
+  console.log(new Date.today.getFullYear());
+  console.log(new Date.today.getMonth() + 1);
+  console.log(new Date.today.getDate());
+}
