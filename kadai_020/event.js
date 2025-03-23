@@ -2,5 +2,5 @@ const textElement = document.getElementById("text");
 
 btn.addEventListener("click", () => {
   console.log("ボタンをクリックしました");
-  btn.textContent = "Clicked!";
+  textElement.textContent = "ボタンをクリックしました";
 });
