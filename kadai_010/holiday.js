@@ -23,6 +23,6 @@ for (let i = 0; i < holidays.length; i++) {
 let i = 0;
 
 while (i < holidays.length - 1) {
-  i++;
   console.log(holidays[i]);
+  i++;
 }
