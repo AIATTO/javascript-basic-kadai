@@ -1,9 +1,6 @@
-const btn = document.getElementById("btn");
-const message = document.getElementById("message");
-const parentList = document.getElementById("parent-list");
+const btn = document.getElementById("btn"); // 'Btn'を'btn'に修正
+const text = document.getElementById("text");
 
 btn.addEventListener("click", () => {
-  const childList = document.createElement("li");
-  childList.innerHTML = "<strong>ボタンをクリックしました</strong>";
-  parentList.appendChild(childList);
+  text.textContent = "ボタンをクリックしました"; // text.textContent に変更
 });
