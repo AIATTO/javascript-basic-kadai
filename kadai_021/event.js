@@ -1,4 +1,13 @@
-const btn = document.getElementById("");
-const text = document.getElementById("");
+// ボタンの要素を取得
+const btn = document.getElementById("btn");
 
-btn.addEventListener("", () => {});
+// テキスト要素を取得
+const text = document.getElementById("text");
+
+// ボタンにクリックイベントを追加
+btn.addEventListener("click", () => {
+  // 2秒後にテキスト内容を変更
+  setTimeout(() => {
+    text.textContent = "ボタンをクリックしました";
+  }, 2000);
+});
