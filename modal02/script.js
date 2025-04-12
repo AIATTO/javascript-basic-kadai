@@ -4,7 +4,7 @@ const openModalBtn = document.getElementById("openModalBtn");
 // モーダル自体
 const modal = document.getElementById("myModal");
 
-// モーダルを閉じるための <span> 要素
+// モーダルを閉じるための要素
 const span = document.getElementsByClassName("close")[0];
 
 // モーダルを開く
