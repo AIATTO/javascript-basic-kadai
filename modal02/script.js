@@ -8,18 +8,18 @@ const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
 
 // モーダルを開く
-openModalBtn.onclick = function () {
+openModalBtn.addEventListener("click", () => {
   modal.style.display = "block";
-};
+});
 
 // モーダルを閉じる
-span.onclick = function () {
+span.addEventListener("click", () => {
   modal.style.display = "none";
-};
+});
 
 // モーダルの外側をクリックしたときに閉じる
-window.onclick = function (event) {
-  if (event.target == modal) {
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
     modal.style.display = "none";
   }
-};
+});
