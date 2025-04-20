@@ -1,19 +1,20 @@
-document.querySelectorAll(".panel-header").forEach((trigger) => {
+const panels = document.querySelectorAll(".panel-header");
+
+panels.forEach((trigger) => {
   trigger.addEventListener("click", function () {
-    const content = this.nextElementSibling;
-    const panel = this.closest(".panel");
+    const content = trigger.nextElementSibling;
 
-    document.querySelectorAll(".panel-header").forEach((otherTrigger) => {
-      if (otherTrigger !== this) {
-        otherTrigger.classList.remove("active");
-        const otherContent = otherTrigger.nextElementSibling;
-        otherContent.style.height = "0";
-      }
-    });
+    // panels.querySelectorAll(".panel-header").forEach((otherTrigger) => {
+    //   if (otherTrigger !== trigger) {
+    //     otherTrigger.classList.remove("active");
+    //     const otherContent = otherTrigger.nextElementSibling;
+    //     otherContent.style.height = "0";
+    //   }
+    // });
 
-    this.classList.toggle("active");
+    trigger.classList.toggle("active");
 
-    if (this.classList.contains("active")) {
+    if (trigger.classList.contains("active")) {
       const body = content.querySelector(".panel-body");
       content.style.height = body.offsetHeight + "px";
     } else {
