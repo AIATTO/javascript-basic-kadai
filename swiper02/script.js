@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
   loop: true,
-  effect: "fade", // フェード切り替え
+  effect: "fade",
   speed: 1200,
   autoplay: {
     delay: 3500,
