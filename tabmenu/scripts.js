@@ -1,15 +1,16 @@
-const tabs = document.querySelectorAll(".tab");
-const contents = document.querySelectorAll(".content");
+const tabMenuButton = document.querySelectorAll(".js-tab");
+const tabMenuContents = document.querySelectorAll(".js-content");
+const tabMenuActive = "active";
 
-tabs.forEach((tab, index) => {
+tabMenuButton.forEach((tab, index) => {
   tab.addEventListener("click", () => {
-    tabs.forEach((tab) => {
-      tab.classList.remove("active");
+    tabMenuButton.forEach((tab) => {
+      tab.classList.remove(tabMenuActive);
     });
-    contents.forEach((content) => {
-      content.classList.remove("active");
+    tabMenuContents.forEach((content) => {
+      content.classList.remove(tabMenuActive);
     });
-    tab.classList.add("active");
-    contents[index].classList.add("active");
+    tab.classList.add(tabMenuActive);
+    tabMenuContents[index].classList.add(tabMenuActive);
   });
 });

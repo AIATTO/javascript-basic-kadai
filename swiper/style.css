@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+/* スライダー本体 */
+.swiper {
+  width: 50%;
+  height: 50%;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* スライド */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background: #4e73df;
+  color: white;
+}
+
+.swiper-slide img {
+  width: 100%; /* スライド枠に合わせる */
+  height: 100%; /* 高さも枠に合わせる */
+  object-fit: cover; /* はみ出し防止＆トリミング */
+}
