@@ -1,9 +1,9 @@
 const swiper = new Swiper(".swiper", {
   loop: true,
-  effect: "fade", // フェード切り替えでオシャレに
-  speed: 1000, // 切り替え速度
+  effect: "fade", // フェード切り替え
+  speed: 1200,
   autoplay: {
-    delay: 3000,
+    delay: 3500,
     disableOnInteraction: false,
   },
   pagination: {
